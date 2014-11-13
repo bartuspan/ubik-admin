@@ -4,10 +4,10 @@
 defined( 'UBIK_ADMIN_CONTACT_METHODS' )     || define( 'UBIK_ADMIN_CONTACT_METHODS', false );
 
 // Admin HTML editor font size; string or false to disable
-defined( 'UBIK_ADMIN_EDITOR_FONT_SIZE' )    || define( 'UBIK_ADMIN_EDITOR_FONT_SIZE', '18px' );
+defined( 'UBIK_ADMIN_EDITOR_FONT_SIZE' )    || define( 'UBIK_ADMIN_EDITOR_FONT_SIZE', false );
 
 // Admin HTML editor font stack; string or false to disable
-defined( 'UBIK_ADMIN_EDITOR_FONT_STACK' )   || define( 'UBIK_ADMIN_EDITOR_FONT_STACK', 'Georgia, "Palatino Linotype", Palatino, "URW Palladio L", "Book Antiqua", "Times New Roman", serif;' );
+defined( 'UBIK_ADMIN_EDITOR_FONT_STACK' )   || define( 'UBIK_ADMIN_EDITOR_FONT_STACK', false );
 
 // Featured image/post thumbnail column in post list; true/false
 defined( 'UBIK_ADMIN_POST_LIST_THUMBS' )    || define( 'UBIK_ADMIN_POST_LIST_THUMBS', false );
