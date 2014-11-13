@@ -1,0 +1,22 @@
+{
+  "name": "synapticism/ubik-admin",
+  "description": "A library of hacks and snippets for the WordPress admin panel",
+  "keywords": [
+    "wordpress",
+    "wordpress-plugin",
+    "plugin"
+  ],
+  "homepage": "https://github.com/synapticism/ubik-admin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexander Synaptic",
+      "email": "alexander@synapticism.com",
+      "homepage": "http://alexandersynaptic.com"
+    }
+  ],
+  "type": "library",
+  "require": {
+    "composer/installers": "v1.0.6"
+  }
+}
