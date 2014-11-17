@@ -43,7 +43,8 @@ function ubik_admin_category_filter_hide() {
   </style><?php
 }
 
-if ( function_exists( 'ubik_categorized_blog' ) ) {
-  if ( !ubik_categorized_blog() )
+// Automatically hide categories; if you aren't using Ubik Terms you'll have to invoke this manually
+if ( function_exists( 'is_categorized_blog' ) ) {
+  if ( !is_categorized_blog() )
     add_action( 'admin_head-edit.php', 'ubik_admin_category_filter_hide' );
 }
