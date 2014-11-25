@@ -2,7 +2,7 @@
 
 // HTML editor style hack; source: http://justintadlock.com/archives/2011/07/06/fixing-wordpress-3-2s-html-editor-font
 // See also: http://css-tricks.com/snippets/wordpress/apply-custom-css-to-admin-area/
-if ( !function_exists( 'ubik_admin_text_editor_style' ) ) : function ubik_admin_text_editor_style() {
+if ( !function_exists( 'ubik_admin_html_editor_style' ) ) : function ubik_admin_html_editor_style() {
 
   if ( UBIK_ADMIN_EDITOR_FONT_SIZE ) {
     $font_size = UBIK_ADMIN_EDITOR_FONT_SIZE;
@@ -34,7 +34,7 @@ if ( !function_exists( 'ubik_admin_text_editor_style' ) ) : function ubik_admin_
 
 
 // Font loading code borrowed from Twenty Twelve by way of Pendrell
-if ( !function_exists( 'ubik_admin_text_editor_fonts' ) ) : function ubik_admin_text_editor_fonts() {
+if ( !function_exists( 'ubik_admin_html_editor_fonts' ) ) : function ubik_admin_html_editor_fonts() {
 
   // Allows us to pass a Google web font declaration as needed
   if ( UBIK_ADMIN_EDITOR_GOOGLE_FONTS ) {
@@ -55,9 +55,9 @@ if ( !function_exists( 'ubik_admin_text_editor_fonts' ) ) : function ubik_admin_
 } endif;
 
 if ( UBIK_ADMIN_EDITOR_STYLE ) {
-  add_action( 'admin_head-post.php', 'ubik_admin_text_editor_style' );
-  add_action( 'admin_head-post-new.php', 'ubik_admin_text_editor_style' );
-  add_action( 'admin_enqueue_scripts', 'ubik_admin_text_editor_fonts' );
+  add_action( 'admin_head-post.php', 'ubik_admin_html_editor_style' );
+  add_action( 'admin_head-post-new.php', 'ubik_admin_html_editor_style' );
+  add_action( 'admin_enqueue_scripts', 'ubik_admin_html_editor_fonts' );
 }
 
 
