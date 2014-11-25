@@ -3,19 +3,19 @@
 // Additional contact methods hack; true/false
 defined( 'UBIK_ADMIN_CONTACT_METHODS' )     || define( 'UBIK_ADMIN_CONTACT_METHODS', false );
 
-// Text editor font size; string or false to default back to 18px
+// Text editor font size; string or false to default to '18px'
 defined( 'UBIK_ADMIN_EDITOR_FONT_SIZE' )    || define( 'UBIK_ADMIN_EDITOR_FONT_SIZE', false );
 
-// Text editor font stack; string or false to default back to Helvetica Neue etc.
+// Text editor font stack; string or false to default back to Helvetica Neue etc. (see code)
 defined( 'UBIK_ADMIN_EDITOR_FONT_STACK' )   || define( 'UBIK_ADMIN_EDITOR_FONT_STACK', '"Noto Serif", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif' );
 
 // Text editor custom Google Fonts declaration; string or false to disable
 defined( 'UBIK_ADMIN_EDITOR_GOOGLE_FONTS' ) || define( 'UBIK_ADMIN_EDITOR_GOOGLE_FONTS', 'Noto+Serif:400' );
 
-// Text editor line-height; string or false to default back to 1.5
+// Text editor line-height; string or false to default to '1.5'
 defined( 'UBIK_ADMIN_EDITOR_LINE_HEIGHT' )  || define( 'UBIK_ADMIN_EDITOR_LINE_HEIGHT', false );
 
-// Master switch for styling the text editor; true/false to disable
+// Master switch for styling the text editor; true/false to disable entirely
 defined( 'UBIK_ADMIN_EDITOR_STYLE' )        || define( 'UBIK_ADMIN_EDITOR_STYLE', true );
 
 // Featured image/post thumbnail column in post list; true/false
@@ -36,5 +36,5 @@ defined( 'UBIK_ADMIN_VIEW_ALL_SETTINGS' )   || define( 'UBIK_ADMIN_VIEW_ALL_SETT
 // Switch for the magic "view all shortcodes" hack; true/false
 defined( 'UBIK_ADMIN_VIEW_ALL_SHORTCODES' ) || define( 'UBIK_ADMIN_VIEW_ALL_SHORTCODES', false );
 
-// Master switch for the visual editor; true to disable editor, false to let WordPress sort it out
+// Master switch for the visual editor; true to disable editor, false to let WordPress control this
 defined( 'UBIK_ADMIN_VISUAL_EDITOR_OFF' )   || define( 'UBIK_ADMIN_VISUAL_EDITOR_OFF', false );
