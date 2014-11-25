@@ -2,7 +2,7 @@
 
 // Add a tags filter to post list; adapted from https://wordpress.stackexchange.com/questions/578/adding-a-taxonomy-filter-to-admin-list-for-a-custom-post-type
 // @TODO: generalize this function to apply to any taxonomy
-function ubik_admin_tag_filter() {
+if ( !function_exists( 'ubik_admin_tag_filter' ) ) : function ubik_admin_tag_filter() {
   global $typenow;
 
   if ( $typenow == 'post' ) {
@@ -19,14 +19,14 @@ function ubik_admin_tag_filter() {
       'selected'          => $term
     ) );
   }
-}
+} endif;
 
 // This is a workaround for a known WordPress issue: https://core.trac.wordpress.org/ticket/13258
-function ubik_admin_tag_filter_query_vars( $vars ) {
+if ( !function_exists( 'ubik_admin_tag_filter_query_vars' ) ) : function ubik_admin_tag_filter_query_vars( $vars ) {
   if ( is_admin() )
     $vars[] = "tag_id";
   return $vars;
-}
+} endif;
 
 if ( UBIK_ADMIN_TAG_FILTER ) {
   add_filter( 'query_vars', 'ubik_admin_tag_filter_query_vars' );
@@ -36,14 +36,14 @@ if ( UBIK_ADMIN_TAG_FILTER ) {
 
 
 // Hide categories filter on uncategorized blogs
-function ubik_admin_category_filter_hide() {
+if ( !function_exists( 'ubik_admin_category_filter_hide' ) ) : function ubik_admin_category_filter_hide() {
   ?><style type="text/css">
       select#cat { display: none; }
     }
   </style><?php
-}
+} endif;
 
-// Automatically hide categories; if you aren't using Ubik Terms you'll have to invoke this manually
+// Automatically hide categories; if you aren't using Ubik Terms you'll have to invoke this manually; @TODO: resolve linkage
 if ( function_exists( 'is_categorized_blog' ) ) {
   if ( !is_categorized_blog() )
     add_action( 'admin_head-edit.php', 'ubik_admin_category_filter_hide' );

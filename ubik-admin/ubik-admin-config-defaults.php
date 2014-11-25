@@ -3,11 +3,20 @@
 // Additional contact methods hack; true/false
 defined( 'UBIK_ADMIN_CONTACT_METHODS' )     || define( 'UBIK_ADMIN_CONTACT_METHODS', false );
 
-// Admin HTML editor font size; string or false to disable
+// Text editor font size; string or false to default back to 18px
 defined( 'UBIK_ADMIN_EDITOR_FONT_SIZE' )    || define( 'UBIK_ADMIN_EDITOR_FONT_SIZE', false );
 
-// Admin HTML editor font stack; string or false to disable
-defined( 'UBIK_ADMIN_EDITOR_FONT_STACK' )   || define( 'UBIK_ADMIN_EDITOR_FONT_STACK', false );
+// Text editor font stack; string or false to default back to Helvetica Neue etc.
+defined( 'UBIK_ADMIN_EDITOR_FONT_STACK' )   || define( 'UBIK_ADMIN_EDITOR_FONT_STACK', '"Noto Serif", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif' );
+
+// Text editor custom Google Fonts declaration; string or false to disable
+defined( 'UBIK_ADMIN_EDITOR_GOOGLE_FONTS' ) || define( 'UBIK_ADMIN_EDITOR_GOOGLE_FONTS', 'Noto+Serif:400' );
+
+// Text editor line-height; string or false to default back to 1.5
+defined( 'UBIK_ADMIN_EDITOR_LINE_HEIGHT' )  || define( 'UBIK_ADMIN_EDITOR_LINE_HEIGHT', false );
+
+// Master switch for styling the text editor; true/false to disable
+defined( 'UBIK_ADMIN_EDITOR_STYLE' )        || define( 'UBIK_ADMIN_EDITOR_STYLE', true );
 
 // Featured image/post thumbnail column in post list; true/false
 defined( 'UBIK_ADMIN_POST_LIST_THUMBS' )    || define( 'UBIK_ADMIN_POST_LIST_THUMBS', false );

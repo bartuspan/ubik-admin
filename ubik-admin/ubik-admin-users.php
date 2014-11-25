@@ -1,7 +1,7 @@
 <?php // ==== USERS ==== //
 
 // Change user contact methods
-function ubik_admin_contact_methods( $contact ) {
+if ( !function_exists( 'ubik_admin_contact_methods' ) ) : function ubik_admin_contact_methods( $contact ) {
 
   // Add useful contact methods
   if ( !isset( $contact['facebook'] ) )
@@ -33,7 +33,7 @@ function ubik_admin_contact_methods( $contact ) {
     unset($contact['yim']);
 
   return $contact;
-}
+} endif;
 if ( UBIK_ADMIN_CONTACT_METHODS )
   add_filter( 'user_contactmethods', 'ubik_admin_contact_methods' );
 

@@ -1,6 +1,6 @@
 # Ubik Admin
 
-* Post editor: force font family and size.
+* Post editor: style the text editor with Google Web Fonts (defaults to Noto Serif, 18px).
 * Post editor: disable visual editor completely.
 * Post list: filter by tag.
 * Post list: hide category filter.
