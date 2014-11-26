@@ -44,7 +44,7 @@ if ( !function_exists( 'ubik_admin_category_filter_hide' ) ) : function ubik_adm
 } endif;
 
 // Automatically hide categories; relies on the is_categorized conditional that is part of Ubik's core library
-if ( function_exists( 'is_categorized' ) {
+if ( function_exists( 'is_categorized' ) ) {
   if ( !is_categorized() )
     add_action( 'admin_head-edit.php', 'ubik_admin_category_filter_hide' );
 }
