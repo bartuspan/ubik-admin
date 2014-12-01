@@ -1,8 +1,5 @@
 <?php // ==== CONFIGURATION ==== //
 
-// Additional contact methods hack; true/false
-defined( 'UBIK_ADMIN_CONTACT_METHODS' )     || define( 'UBIK_ADMIN_CONTACT_METHODS', false );
-
 // HTML editor font size; string or false to default to '18px'
 defined( 'UBIK_ADMIN_EDITOR_FONT_SIZE' )    || define( 'UBIK_ADMIN_EDITOR_FONT_SIZE', false );
 
@@ -29,6 +26,12 @@ defined( 'UBIK_ADMIN_TERM_EDIT_STYLE' )     || define( 'UBIK_ADMIN_TERM_EDIT_STY
 
 // Allow HTML in user descriptions; true/false
 defined( 'UBIK_ADMIN_USER_ALLOW_HTML' )     || define( 'UBIK_ADMIN_USER_ALLOW_HTML', false );
+
+// Cleam out the cruft in the default WordPress contact methods (AIM, Jabber, YIM); true/false
+defined( 'UBIK_ADMIN_USER_CONTACT_CLEAN' )  || define( 'UBIK_ADMIN_USER_CONTACT_CLEAN', true );
+
+// Additional contact methods hack; see source code for an array of options to filter; true/false
+defined( 'UBIK_ADMIN_USER_CONTACT_METHOD' ) || define( 'UBIK_ADMIN_USER_CONTACT_METHOD', false );
 
 // Switch for the magic "all settings" hack; true/false
 defined( 'UBIK_ADMIN_VIEW_ALL_SETTINGS' )   || define( 'UBIK_ADMIN_VIEW_ALL_SETTINGS', false );

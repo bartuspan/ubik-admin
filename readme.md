@@ -6,7 +6,8 @@
 * Post list: hide category filter.
 * Post list: post thumbnails.
 * Term editor: optional re-arrangement of some elements on the edit tags view.
-* User contact methods: add Facebook, Flickr, GitHub, Google+, Instagram, and Twitter; remove AIM, Jabber, and Yahoo.
+* User contact methods: add Facebook, Flickr, GitHub, Google+, Instagram, and Twitter
+* User contact methods: remove AIM, Jabber, and Yahoo.
 * User descriptions: allow HTML.
 * View all settings hack (activate and browse to the Options menu).
 * View all shortcodes snippet by [Paulund](http://www.paulund.co.uk).
