@@ -10,7 +10,7 @@ if ( !function_exists( 'ubik_admin_contact_methods' ) ) : function ubik_admin_co
     'github'      => __( 'GitHub URL', 'ubik' ),
     'googleplus'  => __( 'Google+', 'ubik' ), // Formerly `google`; changed to be compatible with Yoast WordPress SEO
     'instagram'   => __( 'Instagram ID', 'ubik' ),
-    'pinterest'   => __( 'Pinterest', 'ubik' ),
+    'pinterest'   => __( 'Pinterest ID', 'ubik' ),
     'twitter'     => __( 'Twitter ID (without @)', 'ubik' )
     )
   );
