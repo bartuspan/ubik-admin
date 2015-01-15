@@ -1,7 +1,7 @@
 <?php // ==== TERM EDITOR ==== //
 
 // Hack: re-arrange the edit-tags.php file; makes working with terms a little easier but there are better ways of doing this
-if ( !function_exists( 'ubik_admin_term_edit_style' ) ) : function ubik_admin_term_edit_style() {
+function ubik_admin_term_edit_style() {
   ?><style type="text/css">
     #col-left {
       float: right;
@@ -21,6 +21,6 @@ if ( !function_exists( 'ubik_admin_term_edit_style' ) ) : function ubik_admin_te
       display: none;
     }
   </style><?php
-} endif;
+}
 if ( UBIK_ADMIN_TERM_EDIT_STYLE )
   add_action( 'admin_head-edit-tags.php', 'ubik_admin_term_edit_style' );

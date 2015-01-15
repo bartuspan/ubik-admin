@@ -2,7 +2,7 @@
 
 // Change user contact methods; Yoast has a discussion of this general approach over here: https://yoast.com/user-contact-fields-wordpress/
 // @filter: ubik_admin_user_contact_methods (array)
-if ( !function_exists( 'ubik_admin_contact_methods' ) ) : function ubik_admin_contact_methods( $contact ) {
+function ubik_admin_contact_methods( $contact ) {
 
   $methods = apply_filters( 'ubik_admin_user_contact_methods', array(
     'facebook'    => __( 'Facebook profile URL', 'ubik' ),
@@ -27,7 +27,7 @@ if ( !function_exists( 'ubik_admin_contact_methods' ) ) : function ubik_admin_co
   ksort( $contact );
 
   return $contact;
-} endif;
+}
 if ( UBIK_ADMIN_USER_CONTACT_METHOD )
   add_filter( 'user_contactmethods', 'ubik_admin_contact_methods', 99 );
 
@@ -35,7 +35,7 @@ if ( UBIK_ADMIN_USER_CONTACT_METHOD )
 
 // Clean out the cruft in the default WordPress contact methods
 // @filter: ubik_admin_user_contact_cleaner (array)
-if ( !function_exists( 'ubik_admin_user_contact_cleaner' ) ) : function ubik_admin_user_contact_cleaner( $contact ) {
+function ubik_admin_user_contact_cleaner( $contact ) {
 
   $methods = apply_filters( 'ubik_admin_user_contact_cleaner', array( 'aim', 'jabber', 'yim' ) );
 
@@ -45,7 +45,7 @@ if ( !function_exists( 'ubik_admin_user_contact_cleaner' ) ) : function ubik_adm
   }
 
   return $contact;
-} endif;
+}
 if ( UBIK_ADMIN_USER_CONTACT_CLEAN )
   add_filter( 'user_contactmethods', 'ubik_admin_user_contact_cleaner' );
 
