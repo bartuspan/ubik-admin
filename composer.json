@@ -7,7 +7,7 @@
     "plugin"
   ],
   "homepage": "https://github.com/synapticism/ubik-admin",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "authors": [
     {
       "name": "Alexander Synaptic",
@@ -17,6 +17,6 @@
   ],
   "type": "library",
   "require": {
-    "composer/installers": "v1.0.6"
+    "synapticism/ubik": "^0.0.1"
   }
 }

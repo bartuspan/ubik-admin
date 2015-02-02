@@ -1,5 +1,7 @@
 # Ubik Admin
 
+A library of functions, snippets, and hacks that alter the WordPress admin experience.
+
 * Post editor: style the text editor with Google Web Fonts (defaults to Noto Serif, 18px).
 * Post editor: disable visual editor completely.
 * Post list: filter by tag.
@@ -12,19 +14,21 @@
 * View all settings hack (activate and browse to the Options menu).
 * View all shortcodes snippet by [Paulund](http://www.paulund.co.uk).
 
-Part of the [Ubik](https://github.com/synapticism/ubik) suite of WordPress components.
+Part of the [Ubik](https://github.com/synapticism/ubik) family of WordPress components.
 
 
 
 ## Installation
 
-### Bower
+Install via Composer:
 
-Install via Bower:
+```composer require synapticism/ubik-admin```
+
+Install via Bower (warning: no dependency management):
 
 ```bower install https://github.com/synapticism/ubik-admin.git -D```
 
-See [Pendrell](https://github.com/synapticism/pendrell) for examples of usage.
+See [Pendrell](https://github.com/synapticism/pendrell) for an example of integration and usage.
 
 
 
