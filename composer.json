@@ -17,6 +17,6 @@
   ],
   "type": "library",
   "require": {
-    "synapticism/ubik": "^0.0.1"
+    "synapticism/ubik": "^0.0.2"
   }
 }
