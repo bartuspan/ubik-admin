@@ -1,8 +1,7 @@
 # Ubik Admin
 
-A library of functions, snippets, and hacks that alter the WordPress admin experience.
+A library of functions, snippets, and hacks that alter the WordPress admin experience. This Ubik component is a little more slapdash than some of the others; be prepared to wade in and check sources rather than blindly activating everything.
 
-* Post editor: style the text editor with Google Web Fonts (defaults to Noto Serif, 18px).
 * Post editor: disable visual editor completely.
 * Post list: filter by tag.
 * Post list: hide category filter.
@@ -37,7 +36,7 @@ See [Pendrell](https://github.com/synapticism/pendrell) for an example of integr
 Two ways to configure this component:
 
 * Set constants and variables in `functions.php` (or some equivalent in your theme) prior to loading this component.
-* Copy `ubik-[plugin]-config-defaults.php` to `ubik-[plugin]-config.php` and modify to suit your needs.
+* Copy `ubik-admin-config-defaults.php` to `ubik-admin-config.php` and modify to suit your needs.
 
 There are many options for this component; browse the source to see them all.
 

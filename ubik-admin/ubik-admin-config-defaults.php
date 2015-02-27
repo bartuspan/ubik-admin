@@ -1,20 +1,5 @@
 <?php // ==== CONFIGURATION ==== //
 
-// HTML editor font size; string or false to default to '18px'
-defined( 'UBIK_ADMIN_EDITOR_FONT_SIZE' )    || define( 'UBIK_ADMIN_EDITOR_FONT_SIZE', false );
-
-// HTML editor font stack; string or false to default back to Helvetica Neue etc. (see code)
-defined( 'UBIK_ADMIN_EDITOR_FONT_STACK' )   || define( 'UBIK_ADMIN_EDITOR_FONT_STACK', '"Noto Serif", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif' );
-
-// HTML editor custom Google Fonts declaration; string or false to disable
-defined( 'UBIK_ADMIN_EDITOR_GOOGLE_FONTS' ) || define( 'UBIK_ADMIN_EDITOR_GOOGLE_FONTS', 'Noto+Serif:400' );
-
-// HTML editor line-height; string or false to default to '1.5'
-defined( 'UBIK_ADMIN_EDITOR_LINE_HEIGHT' )  || define( 'UBIK_ADMIN_EDITOR_LINE_HEIGHT', false );
-
-// Master switch for styling the text editor; true/false to disable entirely
-defined( 'UBIK_ADMIN_EDITOR_STYLE' )        || define( 'UBIK_ADMIN_EDITOR_STYLE', true );
-
 // Featured image/post thumbnail column in post list; true/false
 defined( 'UBIK_ADMIN_POST_LIST_THUMBS' )    || define( 'UBIK_ADMIN_POST_LIST_THUMBS', false );
 

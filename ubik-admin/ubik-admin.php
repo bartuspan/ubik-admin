@@ -5,9 +5,9 @@
  * Description: A library of hacks and snippets for the WordPress admin panel
  * Author: Alexander Synaptic
  * Author URI: http://alexandersynaptic.com
- * Version: 0.0.1
+ * Version: 0.0.3
  */
-define( 'UBIK_ADMIN_VERSION', '0.0.1' );
+define( 'UBIK_ADMIN_VERSION', '0.0.3' );
 
 // Do not call this plugin directly
 if ( !defined( 'WPINC' ) ) {
@@ -22,7 +22,6 @@ if ( is_readable( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'ubik-admin-c
 require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'ubik-admin-config-defaults.php' );
 
 // Load plugin core
-require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'ubik-admin-post-editor.php' );
 require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'ubik-admin-post-list-filters.php' );
 require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'ubik-admin-post-list-thumbs.php' );
 require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'ubik-admin-term-editor.php' );
