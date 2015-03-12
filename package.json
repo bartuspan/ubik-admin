@@ -1,6 +1,6 @@
 {
   "name": "ubik-admin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A library of hacks and snippets for the WordPress admin panel",
   "homepage": "https://github.com/synapticism/ubik-admin",
   "repository": {

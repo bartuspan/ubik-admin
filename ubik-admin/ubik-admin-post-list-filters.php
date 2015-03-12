@@ -39,12 +39,11 @@ if ( UBIK_ADMIN_TAG_FILTER ) {
 function ubik_admin_category_filter_hide() {
   ?><style type="text/css">
       select#cat { display: none; }
-    }
   </style><?php
 }
 
-// Automatically hide categories; @DEPENDENCY: relies on the is_categorized conditional in Ubik core
-if ( function_exists( 'is_categorized' ) ) {
-  if ( !is_categorized() )
+// Automatically hide categories; @DEPENDENCY: Ubik Terms (should fail gracefully though)
+if ( function_exists( 'ubik_terms_categorized' ) ) {
+  if ( !ubik_terms_categorized() )
     add_action( 'admin_head-edit.php', 'ubik_admin_category_filter_hide' );
 }

@@ -5,9 +5,9 @@
  * Description: A library of hacks and snippets for the WordPress admin panel
  * Author: Alexander Synaptic
  * Author URI: http://alexandersynaptic.com
- * Version: 0.0.3
+ * Version: 0.0.4
  */
-define( 'UBIK_ADMIN_VERSION', '0.0.3' );
+define( 'UBIK_ADMIN_VERSION', '0.0.4' );
 
 // Do not call this plugin directly
 if ( !defined( 'WPINC' ) ) {
